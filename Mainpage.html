@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title">COOKBOOK</title>
+    <link rel="stylesheet" href="mainpage.css">
+</head>
+<body>
+    <h1 style="font-family: 'Courier New', Courier, monospace; color: antiquewhite;"> WELCOME TO THE WORLD OF COOKING</h1>
+       <h4 style="font-family:Arial, Helvetica, sans-serif;  color: chocolate; font-size: larger;">"Food is the ingredient that binds us together." - Unknown</h4>
+            <p>In this cookbook, we celebrate the joy of cooking and sharing meals with loved ones. Within these pages, you'll discover a collection 
+              of recipes that blend traditional flavors with modern twists, using accessible ingredients and straightforward techniques.
+            </p>
+        <h3>About This Cookbook:</h3>
+            <p>Cookbook Title is more than just a collection of recipes - it's a journey through the flavors and traditions that bring us together. 
+                With multiple recipes to choose from, you'll find inspiration for every occasion, from quick weeknight meals to special celebrations.
+            </p>
+        <h3>What You'll Find Inside</h3>
+            <p>- Delicious recipes from around the world, including vegetarian, vegan, gluten-free, and dairy-free options<br>
+               - Step-by-step instructions and beautiful photographs to guide you through each recipe<br>
+               - Tips and variations to help you make each dish your own<br>
+               - Stories and anecdotes from our kitchen to yours<br>
+            </p>
+        <h3>A Note from the Author</h3>
+            <p>"I'm thrilled to share this cookbook with you, filled with recipes that have been tested and loved by my family and friends. 
+                My hope is that these recipes will become a part of your own traditions and memories, and that they'll bring as much joy to your table as 
+                they have to mine." - [S.N.R]
+            </p>
+        <h4>Let's Get Cooking!</h4>
+        <p><b>We're excited to have you join us on this culinary journey. So go ahead, get cooking, and make some unforgettable 
+            memories around the table!</b></p>
+        <h2>Happy cooking!</h2>
+            <p>Sojal Jatar<br>
+               Namdini Jgtap<br>
+               Ramali Kathale<br>
+            </p>
+            <div class="tab">
+                <div class="tab-btn" onclick="openTab(event, 'tab1')"><a href="indian cuisine.html">Indian Cuisine</a></div>
+                <div class="tab-btn" onclick="openTab(event, 'tab2')"><a href="korean cuisine.html">Korean Cuisine</a></div>
+                <div class="tab-btn" onclick="openTab(event, 'tab3')"><a href="mexican cuisine.html">Mexican Cuisine</a></div>
+                <div class="tab-btn" onclick="openTab(event, 'tab4')"><a href="italian cuisine.html">Italian Cuisine</div>
+            </div>
+            <script>
+                function openTab(event, tabId) {
+                    // Hide all tab contents
+                    document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+            
+                    // Remove active class from all tabs
+                    document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            
+                    // Show the clicked tab's content
+                    document.getElementById(tabId).classList.add('active');
+            
+                    // Add active class to clicked tab
+                    event.currentTarget.classList.add('active');
+                }
+            </script>      
+</body>
+</html>

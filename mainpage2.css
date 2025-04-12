@@ -1,0 +1,28 @@
+body {
+    background-image: url(mainpage2.avif);
+    background-blend-mode: color-burn ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.tab {
+    display: flex;
+    cursor: pointer;
+    padding: 10px;
+}
+.tab div {
+    padding: 10px 20px;
+    margin: 2px;
+    background-color: bisque;
+    border-radius: 5px;
+}
+.tab div.active {
+    color: white;
+}
+.tab-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+.tab-content.active {
+    display: block;
+}
