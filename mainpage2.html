@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COOKBOOK</title>
+    <link rel="stylesheet" href="mainpage2.css">
+</head>
+    <h1 style="font-family: 'Courier New', Courier, monospace; color: antiquewhite; font-size: xx-large; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">WELOCOME TO WORLD OF COOKING</h1>
+    <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: cornsilk; position: absolute; top: 60%; left: 50%; transform: translate(-50%, -50%); font-size: large;  text-align: center;"><b>
+        AUTHOR NAME:<br>
+    </b>
+    1.RAMALI KATHALE<br>
+    2.SOJAL JATAR<br>;
+    3. NANDINI JAGTAP<br></p>
+<div class="tab">
+    <div class="tab-btn active" onclick="openTab(event, 'tab1')"><a href="Mainpage.html">Info</div>
+    <div class="tab-btn" onclick="openTab(event, 'tab2')"><a href="indian cuisine.html">Indian Cuisine</a></div>
+    <div class="tab-btn" onclick="openTab(event, 'tab3')"><a href="korean cuisine.html">Korean Cuisine</a></div>
+    <div class="tab-btn" onclick="openTab(event, 'tab4')"><a href="mexican cuisine.html">Mexican Cuisine</a></div>
+    <div class="tab-btn" onclick="openTab(event, 'tab5')"><a href="italian cuisine.html">Italian Cuisine</div>
+</div>
+<script>
+    function openTab(event, tabId) {
+        // Hide all tab contents
+        document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+
+        // Remove active class from all tabs
+        document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+
+        // Show the clicked tab's content
+        document.getElementById(tabId).classList.add('active');
+
+        // Add active class to clicked tab
+        event.currentTarget.classList.add('active');
+    }
+</script>
+</body>
+</html>
