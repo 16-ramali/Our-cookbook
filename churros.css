@@ -1,0 +1,55 @@
+body {
+    background-image: url(Churros.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container {
+  width: 500px;     
+  height: 450px;     
+  background-color: beige; 
+  border: 2px solid black; 
+  text-align: left; 
+  line-height: 30px; 
+  margin: 20px;
+}
+.ontainer {
+  width: 700px;
+  height: 450px;
+  background-color: beige;
+  border: 2px solid black;
+  text-align: left;
+  line-height: 30px;
+  margin: 20px;
+}
+.ntainer {
+  width: 700px;
+  height: 210px;
+  background-color: beige;
+  border: 2px solid black;
+  text-align: left;
+  line-height: 30px;
+  margin: 20px;
+}
+.tab {
+  display: flex;
+  cursor: pointer;
+  padding: 10px;
+  }
+  .tab div {
+  padding: 10px 20px;
+  margin: 2px;
+  background-color: bisque;
+  border-radius: 5px;
+  }
+  .tab div.active {
+  color: white;
+  }
+  .tab-content {
+  display: none;
+  padding: 20px;
+  border: 1px solid #ddd;
+  }
+  .tab-content.active {
+  display: block;
+  }
+

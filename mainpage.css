@@ -1,0 +1,30 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-image: url(wallpaper.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.tab {
+    display: flex;
+    cursor: pointer;
+    background: #f1f1f1;
+    padding: 10px;
+}
+.tab div {
+    padding: 10px 20px;
+    margin: 2px;
+    background: lightgray;
+    border-radius: 5px;
+}
+.tab div.active {
+    background: #007bff;
+}
+.tab-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+.tab-content.active {
+    display: block;
+}
